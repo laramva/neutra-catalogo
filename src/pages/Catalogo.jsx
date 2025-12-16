@@ -304,8 +304,8 @@ export default function Catalogo() {
               </div>
             </div>
 
-            {loading ? (
-              <div className="grid">
+            
+              {loading ? (<div className="grid">
                 {Array.from({ length: 9 }).map((_, i) => (
                   <div key={i} className="skeleton" />
                 ))}
